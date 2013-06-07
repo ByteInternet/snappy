@@ -1,3 +1,9 @@
+snappy (1.1.0-1a+wheezy) unstable; urgency=low
+
+  * Bump version to build on wheezy.
+
+ -- Allard Hoeve <allard@byte.nl>  Fri, 07 Jun 2013 20:17:08 +0200
+
 snappy (1.1.0-1a) unstable; urgency=low
 
   * Ensure backport to squeeze/wheezy. 

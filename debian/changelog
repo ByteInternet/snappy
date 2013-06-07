@@ -1,3 +1,9 @@
+snappy (1.1.0-1a) unstable; urgency=low
+
+  * Ensure backport to squeeze/wheezy. 
+
+ -- Allard Hoeve <allard@byte.nl>  Fri, 07 Jun 2013 20:11:08 +0200
+
 snappy (1.1.0-1) unstable; urgency=low
 
   * New upstream release.

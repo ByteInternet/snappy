@@ -5,7 +5,10 @@
 
 # Use standard biuld flags, but with assertions disabled (for performance).
 DPKG_EXPORT_BUILDFLAGS = 1
-include /usr/share/dpkg/buildflags.mk
+
+CFLAGS:=$(shell dpkg-buildflags --get CFLAGS)
+CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
+LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS)
 
 CXXFLAGS += -DNDEBUG
 
@@ -39,7 +42,6 @@ clean:
 	dh_testroot
 	rm -f build-stamp 
 	[ ! -f Makefile ] || $(MAKE) distclean
-	rm -f config.sub config.guess
 	dh_clean 
 
 binary: binary-arch
